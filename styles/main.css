@@ -1,1 +1,208 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+}
+
+main {
+  margin: 3rem auto;
+  width: 90%;
+  padding: 1rem;
+}
+
+.window {
+  border-radius: 1.5rem;
+  min-height: 245px;
+  margin-top: 1rem;
+}
+
+.window--user {
+  background: #1c1f4a;
+  color: #6f76c8;
+}
+
+.window--work {
+  background-color: #ff8c66;
+}
+
+.window--work::after {
+  content: url(../images/icon-work.svg);
+}
+
+.window--play {
+  background-color: #56c2e6;
+}
+
+.window--play::after {
+  content: url(../images/icon-play.svg);
+}
+
+.window--study {
+  background-color: #ff5c7c;
+}
+
+.window--study::after {
+  content: url(../images/icon-study.svg);
+}
+
+.window--exercise {
+  background-color: #4acf81;
+}
+
+.window--exercise::after {
+  content: url(../images/icon-exercise.svg);
+}
+
+.window--social {
+  background-color: #7536d3;
+}
+
+.window--social::after {
+  content: url(../images/icon-social.svg);
+}
+
+.window--selfcare {
+  background-color: #f1c65b;
+}
+
+.window--selfcare::after {
+  content: url(../images/icon-self-care.svg);
+}
+
+.pfp {
+  width: 90px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.report {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+.report--user {
+  background: #5847eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.report--user__title {
+  margin: auto auto auto 1.5rem;
+}
+
+.report--user__title--name {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.report--activity {
+  background: #1c1f4a;
+  min-height: 200px;
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.report--activity__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.report--activity__left--title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.report--activity__left--hours {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.report--activity__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.report--activity__right--menu-icon {
+  width: 30px;
+  -webkit-transform: translateX(7.3rem) translateY(-1.5rem);
+          transform: translateX(7.3rem) translateY(-1.5rem);
+}
+
+.report--activity__right--past-time {
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  color: #bdc1ff;
+  font-weight: 300;
+}
+
+.stats-when {
+  margin: auto;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.small-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #bdc1ff;
+}
+
+.-b {
+  font-size: 1.4rem;
+}
+
+.-active {
+  color: white;
+}
+
+.-not-user {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.-not-user::after {
+  position: absolute;
+  top: -.5rem;
+  right: 1rem;
+  z-index: -1;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+.small-text{
+    font-size: 1rem;
+    font-weight: 300;
+    color: $color-pale-blue;
+}
+
+.-b{
+    font-size: 1.4rem;
+}
+
+.-active{
+    color: white;
+}
+
+.-not-user{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::after{
+        position: absolute;
+        top: -.5rem;
+        right: 1rem;
+        
+        z-index: -1;
+
+    }
+}

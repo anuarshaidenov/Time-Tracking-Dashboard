@@ -19,97 +19,105 @@
 <body>
   <main>
     <div class="window window--user">
-      <div class="report report--user">
-        <img src="./images/image-jeremy.png" alt="User PFP">
-        <div class="report--user__title">
-            <p class="small-text">Report for</p>
-            <p class="users-name">Jeremy Robson</p>
+      <div class="container">
+        <div class="report report--user">
+          <img class="pfp" src="./images/image-jeremy.png" alt="User PFP">
+          <div class="report--user__title">
+              <p class="small-text">Report for</p>
+              <p class="report--user__title--name">Jeremy Robson</p>
+          </div>
         </div>
-      </div>
-      <div class="stats-when">
-        <p class="small-text -b">
-          Daily
-        </p>
-        <p class="small-text -b">
-          Weekly
-        </p>
-        <p class="small-text -b">
-          Monthly
-        </p>
-      </div>
-    </div>
-    <div class="window window--work">
-      <div class="report report--activity">
-        <div class="report--left">
-          <p class="report__title">Work</p>
-          <p class="report__hours">32hrs</p>
-        </div>
-        <div class="report--right">
-          <img src="./images/icon-ellipsis.svg">
-          <p class="small-text">Last week - 36hrs</p>
+        <div class="stats-when">
+          <p class="small-text -b">
+            Daily
+          </p>
+          <p class="small-text -b -active">
+            Weekly
+          </p>
+          <p class="small-text -b">
+            Monthly
+          </p>
         </div>
       </div>
     </div>
-    <div class="window window--play">
-      <div class="report report--activity">
-        <div class="report--left">
-          <p class="report__title">Play</p>
-          <p class="report__hours">10hrs</p>
+    <div class="window -not-user window--work">
+      <div class="container">
+        <div class="report report--activity">
+          <div class="report--activity__left">
+            <p class="report--activity__left--title">Work</p>
+            <p class="report--activity__left--hours">32hrs</p>
+          </div>
+          <div class="report--activity__right">
+            <img class="report--activity__right--menu-icon"  src="./images/icon-ellipsis.svg">
+            <p class="report--activity__right--past-time">Last week - 36hrs</p>
+          </div>
         </div>
-        <div class="report--right">
-          <img src="./images/icon-ellipsis.svg">
-          <p class="small-text">Last week - 36hrs</p>
+      </div>
+      <div class="window -not-user window--play">
+        <div class="report report--activity">
+          <div class="report--activity__left">
+            <p class="report--activity__left--title">Play</p>
+            <p class="report--activity__left--hours">10hrs</p>
+          </div>
+          <div class="report--activity__right">
+            <img class="report--activity__right--menu-icon" src="./images/icon-ellipsis.svg">
+            <p class="report--activity__right--past-time">Last week - 36hrs</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="window window--study">
-      <div class="report report--activity">
-        <div class="report--left">
-          <p class="report__title">Study</p>
-          <p class="report__hours">32hrs</p>
+    <div class="window -not-user window--study">
+      <div class="container">
+        <div class="report report--activity">
+          <div class="report--activity__left">
+            <p class="report--activity__left--title">Study</p>
+            <p class="report--activity__left--hours">32hrs</p>
+          </div>
+          <div class="report--activity__right">
+            <img class="report--activity__right--menu-icon" src="./images/icon-ellipsis.svg">
+            <p class="report--activity__right--past-time">Last week - 36hrs</p>
+          </div>
         </div>
-        <div class="report--right">
-          <img src="./images/icon-ellipsis.svg">
-          <p class="small-text">Last week - 36hrs</p>
+      </div>
+      <div class="window -not-user window--exercise">
+        <div class="report report--activity">
+          <div class="report--activity__left">
+            <p class="report--activity__left--title">Exercise</p>
+            <p class="report--activity__left--hours">32hrs</p>
+          </div>
+          <div class="report--activity__right">
+            <img class="report--activity__right--menu-icon" src="./images/icon-ellipsis.svg">
+            <p class="report--activity__right--past-time">Last week - 36hrs</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="window window--exercise">
-      <div class="report report--activity">
-        <div class="report--left">
-          <p class="report__title">Exercise</p>
-          <p class="report__hours">32hrs</p>
-        </div>
-        <div class="report--right">
-          <img src="./images/icon-ellipsis.svg">
-          <p class="small-text">Last week - 36hrs</p>
-        </div>
-      </div>
-    </div>
-    <div class="window window--social">
-      <div class="report report--activity">
-        <div class="report--left">
-          <p class="report__title">Social</p>
-          <p class="report__hours">32hrs</p>
-        </div>
-        <div class="report--right">
-          <img src="./images/icon-ellipsis.svg">
-          <p class="small-text">Last week - 36hrs</p>
+    <div class="window -not-user window--social">
+      <div class="container">
+        <div class="report report--activity">
+          <div class="report--activity__left">
+            <p class="report--activity__left--title">Social</p>
+            <p class="report--activity__left--hours">32hrs</p>
+          </div>
+          <div class="report--activity__right">
+            <img class="report--activity__right--menu-icon" src="./images/icon-ellipsis.svg">
+            <p class="report--activity__right--past-time">Last week - 36hrs</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="window window--selfcare">
-      <div class="report report--activity">
-        <div class="report--left">
-          <p class="report__title">Self Care</p>
-          <p class="report__hours">32hrs</p>
-        </div>
-        <div class="report--right">
-          <img src="./images/icon-ellipsis.svg">
-          <p class="small-text">Last week - 36hrs</p>
+      <div class="window -not-user window--selfcare">
+        <div class="report report--activity">
+          <div class="report--activity__left">
+            <p class="report--activity__left--title">Self Care</p>
+            <p class="report--activity__left--hours">32hrs</p>
+          </div>
+          <div class="report--activity__right">
+            <img class="report--activity__right--menu-icon" src="./images/icon-ellipsis.svg">
+            <p class="report--activity__right--past-time">Last week - 36hrs</p>
+          </div>
         </div>
       </div>
-    </div>
+      </div>
   </main>
   
   <div class="attribution">

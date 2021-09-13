@@ -1,0 +1,126 @@
+@import 'colors';
+
+.window{
+    border-radius: 1.5rem;
+    min-height: 245px;
+    margin-top: 1rem;
+    &--user{
+        background: $color-dark-blue;
+        color: $color-desaturated-blue;
+    }
+
+    &--work{
+        background-color: $color-work;
+        &::after{
+            content: url(../images/icon-work.svg);
+        }
+    }
+
+    &--play{
+        background-color: $color-play;
+        &::after{
+            content: url(../images/icon-play.svg);
+        }
+    }
+
+    &--study{
+        background-color: $color-study;
+        &::after{
+            content: url(../images/icon-study.svg);
+        }
+    }
+
+    &--exercise{
+        background-color: $color-exercise;
+        &::after{
+            content: url(../images/icon-exercise.svg);
+        }
+    }
+
+    &--social{
+        background-color: $color-social;
+        &::after{
+            content: url(../images/icon-social.svg);
+        }
+    }
+
+    &--selfcare{
+        background-color: $color-selfcare;
+        &::after{
+            content: url(../images/icon-self-care.svg);
+        }
+    }
+}
+
+.pfp {
+    width: 90px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.report{
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: white;
+
+    &--user{
+        background: $color-primary;
+        display: flex;
+
+        &__title{
+            margin: auto auto auto 1.5rem;
+            &--name{
+                font-weight: 300;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &--activity{
+        background: $color-dark-blue;
+        min-height: 200px;
+        transform: translateY(3rem);
+        display: flex;
+        justify-content: space-between;
+        
+
+        &__left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &--title{
+                font-size: 1.4rem;
+                margin-bottom: 10px;
+            }
+            &--hours{
+                font-size: 2.4rem;
+                font-weight: 300;
+            }
+        }
+
+        &__right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &--menu-icon{
+                width: 30px;
+                transform: translateX(7.3rem) translateY(-1.5rem);
+            }
+            &--past-time{
+                transform: translateY(1rem);
+                color: $color-pale-blue;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.stats-when{
+    margin: auto;
+    width: 95%;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
