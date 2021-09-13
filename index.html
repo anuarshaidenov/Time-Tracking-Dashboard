@@ -8,6 +8,8 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
+  <link rel="stylesheet" href="./styles/main.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,62 +17,100 @@
   </style>
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+  <main>
+    <div class="window window--user">
+      <div class="report report--user">
+        <img src="./images/image-jeremy.png" alt="User PFP">
+        <div class="report--user__title">
+            <p class="small-text">Report for</p>
+            <p class="users-name">Jeremy Robson</p>
+        </div>
+      </div>
+      <div class="stats-when">
+        <p class="small-text -b">
+          Daily
+        </p>
+        <p class="small-text -b">
+          Weekly
+        </p>
+        <p class="small-text -b">
+          Monthly
+        </p>
+      </div>
+    </div>
+    <div class="window window--work">
+      <div class="report report--activity">
+        <div class="report--left">
+          <p class="report__title">Work</p>
+          <p class="report__hours">32hrs</p>
+        </div>
+        <div class="report--right">
+          <img src="./images/icon-ellipsis.svg">
+          <p class="small-text">Last week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="window window--play">
+      <div class="report report--activity">
+        <div class="report--left">
+          <p class="report__title">Play</p>
+          <p class="report__hours">10hrs</p>
+        </div>
+        <div class="report--right">
+          <img src="./images/icon-ellipsis.svg">
+          <p class="small-text">Last week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="window window--study">
+      <div class="report report--activity">
+        <div class="report--left">
+          <p class="report__title">Study</p>
+          <p class="report__hours">32hrs</p>
+        </div>
+        <div class="report--right">
+          <img src="./images/icon-ellipsis.svg">
+          <p class="small-text">Last week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="window window--exercise">
+      <div class="report report--activity">
+        <div class="report--left">
+          <p class="report__title">Exercise</p>
+          <p class="report__hours">32hrs</p>
+        </div>
+        <div class="report--right">
+          <img src="./images/icon-ellipsis.svg">
+          <p class="small-text">Last week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="window window--social">
+      <div class="report report--activity">
+        <div class="report--left">
+          <p class="report__title">Social</p>
+          <p class="report__hours">32hrs</p>
+        </div>
+        <div class="report--right">
+          <img src="./images/icon-ellipsis.svg">
+          <p class="small-text">Last week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="window window--selfcare">
+      <div class="report report--activity">
+        <div class="report--left">
+          <p class="report__title">Self Care</p>
+          <p class="report__hours">32hrs</p>
+        </div>
+        <div class="report--right">
+          <img src="./images/icon-ellipsis.svg">
+          <p class="small-text">Last week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
