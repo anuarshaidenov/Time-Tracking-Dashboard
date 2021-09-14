@@ -1,0 +1,127 @@
+@media screen and (min-width: 555px) {
+  .report {
+    padding: 2rem 5rem;
+  }
+
+  .stats-when {
+    padding: 2rem 5rem;
+  }
+  .window {
+    margin-top: 2rem;
+  }
+}
+
+// @media screen and (min-width: 950px) {
+//   main {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+
+//     .window {
+//       margin: 1rem;
+//     }
+//   }
+// }
+
+@media screen and (min-width: 950px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "user work play study"
+      "user exercise social selfcare";
+  }
+
+  .window {
+    margin: 0.5rem;
+    &--user {
+      grid-area: user;
+    }
+    &--work {
+      grid-area: work;
+    }
+    &--play {
+      grid-area: play;
+    }
+    &--study {
+      grid-area: study;
+    }
+    &--exercise {
+      grid-area: exercise;
+    }
+    &--social {
+      grid-area: social;
+    }
+    &--selfcare {
+      grid-area: selfcare;
+    }
+
+    .stats-when {
+      flex-direction: column;
+
+      &__text {
+        margin-top: 1rem;
+      }
+    }
+
+    .report {
+      &--user {
+        flex-direction: column;
+        padding-left: 1.5rem;
+        padding-top: 1.6rem;
+        padding-bottom: 4rem;
+        &__title {
+          margin-left: 0;
+          margin-top: 2.5rem;
+
+          &--name {
+            margin-top: 0.7rem;
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      &--activity {
+        padding: 2rem 2rem;
+
+        &__top {
+          margin-bottom: 0.75rem;
+          &--title {
+            font-size: 1.2rem;
+          }
+
+          &--menu-icon {
+            width: 20px;
+            height: 5px;
+          }
+        }
+
+        &__bottom {
+          flex-direction: column;
+          align-items: flex-start;
+
+          &--hours {
+            font-size: 3rem;
+          }
+
+          &--past-time {
+            margin-left: 0;
+            margin-top: 0.8rem;
+            font-size: 0.77rem;
+          }
+        }
+      }
+    }
+
+    .stats-when {
+      padding-left: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  .report--activity__bottom--hours {
+    font-size: 3.87rem !important;
+  }
+}

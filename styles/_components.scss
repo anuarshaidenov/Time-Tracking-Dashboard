@@ -7,7 +7,6 @@
   &--user {
     background: $color-dark-blue;
     color: $color-desaturated-blue;
-    grid-area: user;
   }
 
   &--work {
@@ -113,6 +112,7 @@
       }
       &--past-time {
         color: $color-pale-blue;
+        margin-left: 2rem;
       }
     }
   }

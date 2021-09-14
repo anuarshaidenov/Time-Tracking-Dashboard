@@ -27,7 +27,6 @@ main {
 .window--user {
   background: #1c1f4a;
   color: #6f76c8;
-  grid-area: user;
 }
 
 .window--work {
@@ -167,6 +166,7 @@ main {
 
 .report--activity__bottom--past-time {
   color: #bdc1ff;
+  margin-left: 2rem;
 }
 
 .stats-when {
@@ -206,5 +206,134 @@ main {
   top: -.5rem;
   right: 1rem;
   z-index: -1;
+}
+
+@media screen and (min-width: 555px) {
+  .report {
+    padding: 2rem 5rem;
+  }
+  .stats-when {
+    padding: 2rem 5rem;
+  }
+  .window {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "user work play study" "user exercise social selfcare";
+  }
+  .window {
+    margin: 0.5rem;
+  }
+  .window--user {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: user;
+  }
+  .window--work {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: work;
+  }
+  .window--play {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: play;
+  }
+  .window--study {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: study;
+  }
+  .window--exercise {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: exercise;
+  }
+  .window--social {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: social;
+  }
+  .window--selfcare {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: selfcare;
+  }
+  .window .stats-when {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .window .stats-when__text {
+    margin-top: 1rem;
+  }
+  .window .report--user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 1.5rem;
+    padding-top: 1.6rem;
+    padding-bottom: 4rem;
+  }
+  .window .report--user__title {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .window .report--user__title--name {
+    margin-top: 0.7rem;
+    font-size: 2.5rem;
+  }
+  .window .report--activity {
+    padding: 2rem 2rem;
+  }
+  .window .report--activity__top {
+    margin-bottom: 0.75rem;
+  }
+  .window .report--activity__top--title {
+    font-size: 1.2rem;
+  }
+  .window .report--activity__top--menu-icon {
+    width: 20px;
+    height: 5px;
+  }
+  .window .report--activity__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .window .report--activity__bottom--hours {
+    font-size: 3rem;
+  }
+  .window .report--activity__bottom--past-time {
+    margin-left: 0;
+    margin-top: 0.8rem;
+    font-size: 0.77rem;
+  }
+  .window .stats-when {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  .report--activity__bottom--hours {
+    font-size: 3.87rem !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
