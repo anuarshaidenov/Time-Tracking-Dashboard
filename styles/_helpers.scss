@@ -1,28 +1,33 @@
-.small-text{
-    font-size: 1rem;
-    font-weight: 300;
-    color: $color-pale-blue;
+.small-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: $color-pale-blue;
 }
 
-.-b{
-    font-size: 1.4rem;
+.-b {
+  font-size: 1.4rem;
 }
 
-.-active{
-    color: white;
+.-active {
+  color: white;
 }
 
-.-not-user{
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+.-not-user {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 
-    &::after{
-        position: absolute;
-        top: -.5rem;
-        right: 1rem;
-        
-        z-index: -1;
+  &::after {
+    position: absolute;
+    top: -0.5rem;
+    right: 1rem;
 
-    }
+    z-index: -1;
+  }
+}
+
+.-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "user work play study" "user exercise social selfcare";
 }

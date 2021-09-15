@@ -1,3 +1,13 @@
+@media (max-width: 950px) {
+  .-big {
+    display: none;
+  }
+
+  .-small {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 555px) {
   .report {
     padding: 2rem 5rem;
@@ -11,29 +21,23 @@
   }
 }
 
-// @media screen and (min-width: 950px) {
-//   main {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-
-//     .window {
-//       margin: 1rem;
-//     }
-//   }
-// }
-
 @media screen and (min-width: 950px) {
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "user work play study"
-      "user exercise social selfcare";
+    justify-content: center;
+  }
+
+  .-big {
+    display: block;
+  }
+
+  .-small {
+    display: none;
   }
 
   .window {
     margin: 0.5rem;
+    transition: all 0.5s;
     &--user {
       grid-area: user;
     }
@@ -52,7 +56,7 @@
     &--social {
       grid-area: social;
     }
-    &--selfcare {
+    &--self-care {
       grid-area: selfcare;
     }
 
@@ -84,10 +88,6 @@
 
       &--activity {
         padding: 2rem 2rem;
-        cursor: pointer;
-        &:active {
-          background: $color-desaturated-blue;
-        }
 
         &__top {
           margin-bottom: 1.2rem;
@@ -117,13 +117,6 @@
     .stats-when {
       padding-left: 1.5rem;
       margin-top: 1rem;
-
-      &__text {
-        &:hover {
-          color: white;
-          cursor: pointer;
-        }
-      }
     }
   }
 }

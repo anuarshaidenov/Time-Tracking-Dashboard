@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="./styles/main.css">
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main>
-    <div class="window window--user">
-      <div class="report report--user">
-        <img class="pfp" src="./images/image-jeremy.png" alt="User PFP">
-        <div class="report--user__title">
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <script defer type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="window window--user -small">
+        <div class="report report--user">
+          <img class="pfp" src="./images/image-jeremy.png" alt="User PFP" />
+          <div class="report--user__title">
             <p class="small-text">Report for</p>
             <p class="report--user__title--name">Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="stats-when">
+          <p class="small-text -b stats-when__text">Daily</p>
+          <p class="small-text -b stats-when__text">Weekly</p>
+          <p class="small-text -b stats-when__text">Monthly</p>
         </div>
       </div>
-      <div class="stats-when">
-        <p class="small-text -b stats-when__text">
-          Daily
-        </p>
-        <p class="small-text -b stats-when__text">
-          Weekly
-        </p>
-        <p class="small-text -b stats-when__text">
-          Monthly
-        </p>
+
+      <div class="window window--user -big">
+        <div class="report report--user">
+          <img class="pfp" src="./images/image-jeremy.png" alt="User PFP" />
+          <div class="report--user__title">
+            <p class="small-text">Report for</p>
+            <p class="report--user__title--name">Jeremy Robson</p>
+          </div>
+        </div>
+        <div class="stats-when">
+          <p class="small-text -b stats-when__text">Daily</p>
+          <p class="small-text -b stats-when__text">Weekly</p>
+          <p class="small-text -b stats-when__text">Monthly</p>
+        </div>
       </div>
-    </div>
-    <div class="window -not-user window--work">
+      <!-- <div class="window -not-user window--work">
         
       <div class="report report--activity">
           <div class="report--activity__top">
@@ -115,12 +137,14 @@
             <p class="report--activity__bottom--past-time">Last week - 36hrs</p>
           </div>
         </div>
-      </div>
-  </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Anuar Shaidenov</a>.
-  </div>
-</body>
+      </div> -->
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Anuar Shaidenov</a>.
+    </div>
+  </body>
 </html>

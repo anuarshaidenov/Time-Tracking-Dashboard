@@ -69,11 +69,11 @@ main {
   content: url(../images/icon-social.svg);
 }
 
-.window--selfcare {
+.window--self-care {
   background-color: #f1c65b;
 }
 
-.window--selfcare::after {
+.window--self-care::after {
   content: url(../images/icon-self-care.svg);
 }
 
@@ -119,6 +119,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.report--activity:active {
+  background: #6f76c8;
 }
 
 .report--activity__top {
@@ -188,6 +192,11 @@ main {
           justify-content: space-between;
 }
 
+.stats-when__text:hover {
+  color: white;
+  cursor: pointer;
+}
+
 .small-text {
   font-size: 1rem;
   font-weight: 300;
@@ -210,9 +219,26 @@ main {
 
 .-not-user::after {
   position: absolute;
-  top: -.5rem;
+  top: -0.5rem;
   right: 1rem;
   z-index: -1;
+}
+
+.-grid {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "user work play study" "user exercise social selfcare";
+}
+
+@media (max-width: 950px) {
+  .-big {
+    display: none;
+  }
+  .-small {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 555px) {
@@ -231,14 +257,20 @@ main {
   main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "user work play study" "user exercise social selfcare";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .-big {
+    display: block;
+  }
+  .-small {
+    display: none;
   }
   .window {
     margin: 0.5rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .window--user {
     -ms-grid-row: 1;
@@ -271,7 +303,7 @@ main {
     -ms-grid-column: 3;
     grid-area: social;
   }
-  .window--selfcare {
+  .window--self-care {
     -ms-grid-row: 2;
     -ms-grid-column: 4;
     grid-area: selfcare;
@@ -305,10 +337,6 @@ main {
   }
   .window .report--activity {
     padding: 2rem 2rem;
-    cursor: pointer;
-  }
-  .window .report--activity:active {
-    background: #6f76c8;
   }
   .window .report--activity__top {
     margin-bottom: 1.2rem;
@@ -337,10 +365,6 @@ main {
   .window .stats-when {
     padding-left: 1.5rem;
     margin-top: 1rem;
-  }
-  .window .stats-when__text:hover {
-    color: white;
-    cursor: pointer;
   }
 }
 
