@@ -76,6 +76,7 @@
 
           &--name {
             margin-top: 0.7rem;
+            margin-bottom: 2rem;
             font-size: 2.5rem;
           }
         }
@@ -83,22 +84,22 @@
 
       &--activity {
         padding: 2rem 2rem;
+        cursor: pointer;
+        &:active {
+          background: $color-desaturated-blue;
+        }
 
         &__top {
-          margin-bottom: 0.75rem;
+          margin-bottom: 1.2rem;
           &--title {
             font-size: 1.2rem;
-          }
-
-          &--menu-icon {
-            width: 20px;
-            height: 5px;
           }
         }
 
         &__bottom {
           flex-direction: column;
           align-items: flex-start;
+          margin-bottom: 0.8rem;
 
           &--hours {
             font-size: 3rem;
@@ -107,7 +108,7 @@
           &--past-time {
             margin-left: 0;
             margin-top: 0.8rem;
-            font-size: 0.77rem;
+            font-size: 1.085rem;
           }
         }
       }
@@ -116,6 +117,13 @@
     .stats-when {
       padding-left: 1.5rem;
       margin-top: 1rem;
+
+      &__text {
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
     }
   }
 }

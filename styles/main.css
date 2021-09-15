@@ -142,8 +142,15 @@ main {
 }
 
 .report--activity__top--menu-icon {
-  width: 30px;
-  height: 8px;
+  background-image: url("../images/icon-ellipsis.svg");
+  width: 22px;
+  height: 7px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.report--activity__top--menu-icon:hover {
+  background-image: url("../images/Vector.svg");
 }
 
 .report--activity__bottom {
@@ -293,20 +300,21 @@ main {
   }
   .window .report--user__title--name {
     margin-top: 0.7rem;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
   }
   .window .report--activity {
     padding: 2rem 2rem;
+    cursor: pointer;
+  }
+  .window .report--activity:active {
+    background: #6f76c8;
   }
   .window .report--activity__top {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.2rem;
   }
   .window .report--activity__top--title {
     font-size: 1.2rem;
-  }
-  .window .report--activity__top--menu-icon {
-    width: 20px;
-    height: 5px;
   }
   .window .report--activity__bottom {
     -webkit-box-orient: vertical;
@@ -316,6 +324,7 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-bottom: 0.8rem;
   }
   .window .report--activity__bottom--hours {
     font-size: 3rem;
@@ -323,11 +332,15 @@ main {
   .window .report--activity__bottom--past-time {
     margin-left: 0;
     margin-top: 0.8rem;
-    font-size: 0.77rem;
+    font-size: 1.085rem;
   }
   .window .stats-when {
     padding-left: 1.5rem;
     margin-top: 1rem;
+  }
+  .window .stats-when__text:hover {
+    color: white;
+    cursor: pointer;
   }
 }
 

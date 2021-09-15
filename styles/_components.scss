@@ -95,8 +95,15 @@
         font-size: 1.4rem;
       }
       &--menu-icon {
-        width: 30px;
-        height: 8px;
+        background-image: url("../images/icon-ellipsis.svg");
+        width: 22px;
+        height: 7px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-image: url("../images/Vector.svg");
+        }
       }
     }
 
